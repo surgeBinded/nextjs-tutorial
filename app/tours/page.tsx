@@ -38,7 +38,7 @@ const ToursPage = async () => {
                   src={tour.image}
                   alt={tour.name}
                   fill
-                  sizes="100vw"
+                  sizes="33vw"
                   priority
                   className="object-cover rounded"
                 />
