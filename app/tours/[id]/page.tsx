@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const url = "https://www.course-api.com/images/tours/tour-1.jpeg";
 
-const page = ({ params }: { params: { id: string } }) => {
+const page = async (props: { params: Promise<{ id: string }> }) => {
+  const params = await props.params;
   return (
     <div>
       <h1 className="text-4xl">ID : {params.id}</h1>
