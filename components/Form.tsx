@@ -1,15 +1,14 @@
-const createUser = async () => {
-  "use server";
-  console.log("createing user...");
-};
+"use client";
+
+import { createUserAction } from "@/utils/actions";
 
 const Form = () => {
   return (
-    <form action={createUser} className={formStyle}>
+    <form action={createUserAction} className={formStyle}>
       <h2 className="text-2xl capitalize mb-4">create user</h2>
       <input
         type="text"
-        name="fistName"
+        name="firstName"
         defaultValue="peter"
         required
         className={inputStyle}
