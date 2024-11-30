@@ -18,13 +18,11 @@ export const createUserAction = async (formData: FormData) => {
 
   try {
     await saveUser(newUser);
+    revalidatePath("/actions");
     // some logic
   } catch (error) {
     console.log(error);
   }
-
-  // revalidatePath("/actions");
-  redirect("/"); // would trigger an error if placed in the try block
 };
 
 export const fetchUsers = async (): Promise<User[]> => {
