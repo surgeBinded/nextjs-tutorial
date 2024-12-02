@@ -1,4 +1,3 @@
-import { log } from "console";
 import Image from "next/image";
 import Link from "next/link";
 
