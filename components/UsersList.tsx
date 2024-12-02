@@ -6,7 +6,7 @@ const UsersList = async () => {
   return (
     <div>
       {users.length ? (
-        <div>
+        <div className="max-w-lg">
           {users.map((user) => {
             return (
               <h4
